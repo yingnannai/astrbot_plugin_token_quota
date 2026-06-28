@@ -1,0 +1,26 @@
+{
+    "ADMIN_TOKEN": {
+        "description": "OneAPI管理员Token",
+        "type": "text",
+        "hint": "必填，OneAPI后台管理员密钥，具备读取日志权限",
+        "default": ""
+    },
+    "ONE_API_URL": {
+        "description": "OneAPI日志接口地址",
+        "type": "text",
+        "hint": "Docker同容器默认：http://oneapi:3000/api/log/search；本机部署填127.0.0.1地址，公网部署替换为公网域名",
+        "default": "http://oneapi:3000/api/log/search"
+    },
+    "TARGET_TOKEN_NAME": {
+        "description": "需要统计的OneAPI令牌名称",
+        "type": "text",
+        "hint": "必须和OneAPI内创建的令牌名称完全一致，区分大小写",
+        "default": "业务统计令牌"
+    },
+    "FETCH_INTERVAL": {
+        "description": "日志拉取间隔(秒)",
+        "type": "int",
+        "hint": "最小30秒，推荐60秒，过小会频繁请求接口",
+        "default": 60
+    }
+}

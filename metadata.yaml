@@ -1,0 +1,6 @@
+plugin_id: astrbot_plugin_token_quota
+name: OneAPI通用Token用量统计
+desc: 定时同步OneAPI调用扣费日志，解决第三方插件中转调用时原生无法统计Token用量的问题，支持指令查询指定令牌当日总消耗额度
+version: 0.0.2
+author: yingnannai
+repo: https://github.com/yingnannai/astrbot_plugin_token_quota
