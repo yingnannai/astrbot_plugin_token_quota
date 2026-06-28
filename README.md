@@ -4,6 +4,9 @@
 请前往仓库右侧 Releases，下载 `astrbot_plugin_token_quota.zip` 成品安装包，解压后文件夹无 `-main` 后缀，可直接放入 AstrBot plugins 目录使用。
 请勿直接点击 Code 下载源码包，该方式解压文件夹会自带分支后缀，需要手动重命名才能正常加载。
 
+## 版权声明
+本插件版权归作者所有，未经作者书面许可，禁止二次修改、打包分发及商用。
+
 ## 前置要求
 服务器已部署 OneAPI 服务，获取管理员Token与日志接口地址。
 
@@ -17,17 +20,3 @@
 ## 指令列表
 /token额度 查询选定令牌当日全局token消耗
 /额度帮助 查看插件内置帮助文档
-
-## 前置要求
-服务器已部署 OneAPI 服务，获取管理员Token与日志接口地址。
-
-## 配置修改说明
-前往 AstrBot 插件可视化配置面板填写参数，无需修改源码：
-1. ADMIN_TOKEN：OneAPI后台管理员密钥
-2. ONE_API_URL：OneAPI日志接口地址
-3. TARGET_TOKEN_NAME：需要统计的OneAPI令牌名称
-4. FETCH_INTERVAL：日志拉取间隔，单位秒
-
-## 指令列表
-/token额度  查询选定令牌当日全局token消耗
-/额度帮助  查看插件内置帮助文档
